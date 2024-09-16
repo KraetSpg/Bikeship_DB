@@ -1,0 +1,69 @@
+{
+  "id": "c93772ce-6672-4ff8-9f58-62943170014d",
+  "prevId": "42005407-ab95-4475-84b1-a4b09bd900fc",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.bikerMeetups": {
+      "name": "bikerMeetups",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "desc": {
+          "name": "desc",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "created_by": {
+          "name": "created_by",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "x_value": {
+          "name": "x_value",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "y_value": {
+          "name": "y_value",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
